@@ -1,7 +1,7 @@
-import withAuth from '@/hocs/withAuth';
-import { getLayout } from '@/layouts/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
+
+import { getLayout } from '@/components/layouts/Layout';
 
 import styles from '../styles/Home.module.css';
 
@@ -67,4 +67,4 @@ const Home = () => {
 
 Home.getLayout = getLayout;
 
-export default withAuth(Home);
+export default Home;
